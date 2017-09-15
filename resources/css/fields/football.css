@@ -1,0 +1,341 @@
+.field_container {
+    background:  url(/resources/media/football_bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.field {
+    background: url(/resources/media/football_field_bg.jpg);
+    background-size: 10%;
+    position: relative;
+    padding: 2vmin;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.62);
+    border: 1px solid #acacac;
+    overflow: hidden;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(0.7vh * 120);
+    min-width: calc(450px + 2vmin) !important;
+}
+
+.active_field, .positions_container {
+    min-width: 450px !important;
+}
+
+.perimeter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.active_field {
+    max-height: calc(0.7vh * 120);
+    max-width: calc(0.7vmin * 90);
+    border: 0.4vmin solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 0px 100vmin rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.positions_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.goal {
+    width: calc(0.7vmin * 7.3);
+    height: calc(0.7vmin * 2);
+    border: 0.4vmin solid #fff;
+    background: 
+    linear-gradient(45deg,rgba(0, 0, 0, 0) 48%,rgb(255, 255, 255) 50%,rgba(255, 255, 255, 0) 52%),
+    linear-gradient(-45deg,rgba(0, 0, 0, 0) 48%,rgb(255, 255, 255) 50%,rgba(0, 0, 0, 0) 52%);
+    background-size: 1em 1em;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+.goal_A {
+    border-bottom: 0;
+}
+
+.goal_B {
+    border-top: 0;
+}
+
+.sector {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: 150ms ease-in;
+}
+
+.sector:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.sector_child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sector_row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.penalty_zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.4vmin solid #fff;
+    width: calc(0.7vmin * 40.3);
+    height: calc(0.7vmin * 16.5);
+    transition: 150ms ease-in;
+}
+
+.penalty_zone:hover {
+    background: rgba(233, 139, 40, 0.4);
+}
+
+.goal_zone {
+    width: calc(0.7vmin * 18.3);
+    height: calc(0.7vmin * 5.5);
+    border: 0.4vmin solid #fff;
+}
+
+.dot {
+    width: 0.8vmin;
+    height: 0.8vmin;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.half_goal {
+    
+}
+
+.angle {
+    border-radius: 100%;
+    border: 0.4vmin solid #fff;
+    width: 2.8vmin;
+    height: 2.8vmin;
+    margin: -1.9vmin;
+    transition: 150ms ease-in;
+}
+
+.angle:hover {
+    background: rgb(233, 40, 40);
+}
+
+.circle {
+    width: calc(0.7vmin * 18.1);
+    height: calc(0.7vmin * 18.1);
+    border-radius: 100%;
+    border: 0.4vmin solid #fff;
+}
+
+
+/* sector A */
+.sector_A {
+    border-bottom: 0.2vmin solid #fff;
+}
+
+.sector_A_top {
+    
+}
+
+.sector_A_top_row_top {}
+
+.sector_A_top_row_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.half_goal_A {
+    margin-top: calc(0.7vmin * -14.1);
+}
+
+.sector_A_bottom_row_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sector_A_bottom {
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.half_center_A {
+    margin-bottom: calc(calc(0.7vmin * -9.15) - 0.5vmin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.penalty_zone_A {
+    border-top: 0;
+}
+
+.goal_zone_A {
+    border-top: 0;
+}
+
+.penalty_dot_A {
+    margin-top: calc(0.7vmin * 7);
+}
+
+
+/* sector B */
+.sector_B {
+    border-top: 0.2vmin solid #fff;
+    align-items: flex-end;
+}
+
+.sector_B_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.sector_B_top_row_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.sector_B_bottom {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sector_B_top_row_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.half_goal_B {
+    margin-bottom: calc(0.7vmin * -14.1);
+}
+
+.half_center_B {
+    margin-top: calc(calc(0.7vmin * -9.15) - 0.5vmin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.penalty_zone_B {
+    border-bottom: 0;
+    justify-content: flex-end;
+}
+
+.goal_zone_B {
+    border-bottom: 0;
+}
+
+.penalty_dot_B {
+    margin-bottom: calc(0.7vmin * 7);
+}
+
+.positions_sector {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.positions_sector_A {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.positions_sector_B {
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+
+.position_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4%;
+    width: 100%;
+}
+
+.position_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    
+    position: relative;
+}
+
+.position_block span {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.position_block:hover {
+    
+}
+
+.position_block_hover {
+    background: #000;
+}
+
+.position_block:hover span {
+
+}
+
+.player {
+    width: 100%;
+    height: 100%;
+    background: #009fff;
+    border-radius: 100%;
+    box-shadow: 0 0 0px 1vmin #ffffff;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.moved_player {
+    opacity: 0.8;
+    background: #ffffff;
+    box-shadow: 0 0 0px 1vmin #60ff00;
+}

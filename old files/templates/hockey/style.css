@@ -1,0 +1,690 @@
+.field_container {
+    background:  url(/img/nhl_arena.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.field {
+    background: url(/img/fields/ice.png);
+    background-size: 8%;
+    position: relative;
+    padding: 2vmin;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.62);
+    border: 1px solid #acacac;
+    overflow: hidden;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(0.7vh * 120);
+    min-width: calc(450px + 2vmin) !important;
+}
+
+.active_field, .positions_container {
+    min-width: 450px !important;
+}
+
+.perimeter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.active_field {
+    max-height: calc(0.7vh * 130);
+    max-width: calc(0.7vmin * 90);
+    border: 0.4vmin solid #ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 0px 100vmin rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+
+.positions_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* ворота */
+.goal {
+    width: calc(0.7vmin * 7.3);
+    height: calc(0.7vmin * 2);
+    border: 0.4vmin solid #000000;
+    background: 
+    linear-gradient(45deg,rgba(0, 0, 0, 0) 48%,rgb(255, 255, 255) 50%,rgba(255, 255, 255, 0) 52%),
+    linear-gradient(-45deg,rgba(0, 0, 0, 0) 48%,rgb(255, 255, 255) 50%,rgba(0, 0, 0, 0) 52%);
+    background-size: 1em 1em;
+    background-color: #808080;
+    z-index: 1;
+    position: absolute;
+    bottom: 45px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.goal_A {
+    border-bottom: 0;
+}
+
+.goal_B {
+    border-top: 0;
+}
+
+.sector {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: 150ms ease-in;
+}
+
+.sector:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.sector_child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sector_row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.penalty_zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.4vmin solid #ff0000;
+    width: calc(2.0vmin * 40.3);
+    transition: 150ms ease-in;
+}
+
+.penalty_zone:hover {
+    background: rgba(233, 139, 40, 0.4);
+}
+
+.goal_zone {
+    width: calc(0.7vmin * 18.3);
+    height: calc(0.7vmin * 5.5);
+    border: 0.4vmin solid #fff;
+}
+
+/* Применяется ко всем точкам в кругах вбрасывания */
+.dot {
+    width: 1.8vmin;
+    height: 1.8vmin;
+    border-radius: 100%;
+    background: #ff0000;
+}
+
+.half_goal {
+    
+}
+
+/* Центральный круг */
+.circle {
+    width: calc(0.7vmin * 18.1);
+    height: calc(0.7vmin * 18.1);
+    border-radius: 100%;
+    border: 0.4vmin solid #ff0000;
+    
+}
+
+/* sector A */
+/* Часть центральной линии в зоне А */
+.sector_A {
+    border-bottom: 0.2vmin solid #ff0000;
+}
+
+.sector_A_top {
+    
+}
+
+.hr {
+     color: #f00;
+     background: #f00; 
+     width: 75%; 
+     height: 5px;
+}
+
+/* Левая точка вбрасывания в средней зоне А */
+.dot_1 {
+    width: 1.9vmin;
+    height: 1.9vmin;
+    border-radius: 100%;
+    background: #ff0000;
+    position: absolute;
+    top: 270px;
+    left: 78px;
+}
+
+/* Правая точка вбрасывания в средней зоне А */
+.dot_2 {
+    width: 1.9vmin;
+    height: 1.9vmin;
+    border-radius: 100%;
+    background: #ff0000;
+    position: relative;
+    top: 85px;
+    left: 290px;
+}
+
+.sector_A_top_row_top {}
+
+/* Правый круг вбрасывания в зоне А */
+.sector_A_top_row_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+/* Левый круг вбрасывания в зоне А */
+.sector_A_top_row_bottom_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    right: 140px;
+}
+
+.half_goal_A {
+    margin-top: calc(0.7vmin * -14.1);
+}
+
+.goal_A {
+    border-bottom: 10;
+    border: 10px; 
+    background-color: red; 
+    color: red; 
+    height: 1.3px;
+    width: 385px;
+    position: relative;
+    top: -268px;
+    right: -1px;
+}
+
+.sector_A_bottom_row_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Точка вбрасывания в левом кругу в зоне А */
+.penalty_dot_A {
+    margin-top: calc(0.7vmin * 7);
+    position: absolute;
+    top: 90px;
+    left: 80px;
+}
+
+.sector_A_bottom {
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Точка вбрасывания в правом кругу в зоне А */
+.penalty_dot_A_1 {
+    margin-top: calc(0.7vmin * 7);
+    position: absolute;
+    top: -60px;
+    left: 220px;
+}
+
+/* Половина круга в центре площадки в зоне А */
+.half_center_A {
+    margin-bottom: calc(calc(0.7vmin * -9.15) - 0.5vmin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot_center {
+    margin-top: calc(0.7vmin * 7);
+    position: absolute;
+    top: 90px;
+    left: 90px;
+}
+
+/* Линия по периметру ворот в зоне А */
+.penalty_zone_A {
+    border-top: 0;
+    position: absolute;
+    top: 40px;
+}
+
+/* Зона ворот в зоне А */
+.goal_zone_A {
+    width: calc(1.16vh * 9);
+    height: calc(0.7vh * 7);
+    border: 2px solid #ff0000;
+    background-color: #00bfff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+
+/* Средняя линия зоны в зоне А */
+.hr {
+     color: #f00;
+     background: #4169e1;
+     width: 100%; 
+     height: 5px;
+     position: absolute;
+     top: 230px;
+}
+
+/* Палочка левого круга верх-лево */
+.hr5 {
+    border-top-right-radius: 40px;
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 120px;
+    left: 21px;
+}
+
+/* Палочка правого круга верх-право */
+.hr6 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+}
+
+/* Палочка левого круга низ-лево */
+.hr7 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 145px;
+    left: 24px;
+}
+
+/* Палочка правого круга низ-право */
+.hr8 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 145px;
+    right: 14px;
+}
+
+/* Палочка левого круга верх-право */
+.hr9 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 120px;
+    left: 131px;
+}
+
+/* Палочка правого круга низ-лево */
+.hr10 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 145px;
+    right: 118px;
+}
+
+/* Палочка левого круга низ-право */
+.hr11 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 145px;
+    left: 128px;
+}
+
+/* Палочка правого круга верх-лево */
+.hr12 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 120px;
+    right: 121px;
+}
+
+/* sector B */
+/* Часть центральной линии в зоне B */
+.sector_B {
+    border-top: 0.2vmin solid #ff0000;
+    align-items: flex-end;
+}
+
+.sector_B_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.sector_B_top_row_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+/* Точка вбрасывания в левом кругу */
+.penalty_dot_B_1 {
+    margin-top: calc(0.7vmin * 7);
+    position: absolute;
+    bottom: -10px;
+    right: :125px;
+}
+
+.sector_B_bottom {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Правый круг вбрасывания в зоне B */
+.sector_B_top_row_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 140px;
+    left: 150px;
+}
+
+/* Левый круг вбрасывания */
+.sector_B_top_row_bottom_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 130px;
+    right: 150px;
+}
+
+/* Точка вбрасывания в правом кругу */
+.penalty_dot_B {
+    margin-top: calc(0.7vmin * 7);
+    position: absolute;
+    top: 20px;
+    right: : 125px;
+}
+
+.half_goal_B {
+    margin-bottom: calc(0.7vmin * -14.1);
+}
+
+.half_center_B {
+    margin-top: calc(calc(0.7vmin * -9.15) - 0.5vmin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.penalty_zone_B {
+    border-bottom: 0;
+    position: absolute;
+    bottom: 40px;
+}
+
+/* Вратарская зона ворот в зоне B */
+.goal_zone_B {
+    width: calc(1.16vh * 9);
+    height: calc(0.7vh * 7);
+    border: 2px solid #ff0000;
+    background-color: #00bfff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 197px;
+}
+
+/* Средняя линия в зоне B */
+.hr_1 {
+     color: #f00;
+     background: #4169e1; 
+     width: 170%; 
+     height: 5px;
+     position: absolute;
+     bottom: 80px;
+}
+
+/* Левая точка вбрасывания в зоне B */
+.dot_3 {
+    width: 1.9vmin;
+    height: 1.9vmin;
+    border-radius: 100%;
+    background: #ff0000;
+    position: relative;
+    bottom: 140px;
+    left: 10px;
+}
+
+/* Палочка левого круга верх-право */
+.hr13 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 35px;
+    right: 162px;
+}
+
+/* Палочка правого круга верх-лево */
+.hr14 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 35px;
+    right: -30px;
+}
+
+/* Палочка правого круга низ-лево */
+.hr15 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 60px;
+    right: -30px;
+}
+
+/* Палочка левого круга низ-право */
+.hr16 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 60px;
+    right: 162px;
+}
+
+/* Палочка правого круга верх-право */
+.hr17 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 35px;
+    right: -138px;
+}
+
+/* Палочка левого круга низ-лево */
+.hr18 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 60px;
+    right: 269px;
+}
+
+/* Палочка левого круга верх-лево */
+.hr19 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 35px;
+    right: 269px;
+}
+
+/* Палочка правого круга низ-право */
+.hr20 {
+    background-color: red; 
+    color: red; 
+    width: 4%;
+    height: 2px;
+    position: absolute;
+    top: 60px;
+    right: -137px;
+}
+
+.hr21 {
+    background-color: red; 
+    color: red; 
+    width: 6%;
+    height: 2px;
+    position: absolute;
+    top: 60px;
+    right: 40;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.positions_sector {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Правая точка вбрасывания в зоне B */
+.dot_4 {
+    width: 1.9vmin;
+    height: 1.9vmin;
+    border-radius: 100%;
+    background: #ff0000;
+    position: relative;
+    bottom: 100px;
+    right::30px;
+}
+
+.positions_sector_A {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.positions_sector_B {
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+
+.position_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4%;
+    width: 100%;
+}
+
+.position_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    
+    position: relative;
+}
+
+.position_block span {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.position_block:hover {
+    
+}
+
+.position_block_hover {
+    background: #000;
+}
+
+.position_block:hover span {
+
+}
+
+.player {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 0 0px 1vmin #ff0000;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.moved_player {
+    opacity: 0.5;
+    background: #ff6347;
+    box-shadow: 0 0 0px 1vmin #ffff00;
+}

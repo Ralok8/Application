@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+</head>
+<body>
+    <div class="vladmaxi-top">
+        <a href="https://vk.com/eugene_bar" target="_blank">Форма входа и регистрации</a>
+        <span class="right">
+            </a>
+        </span>
+    <div class="clr"></div>
+    </div>
+
+    <div id="login">
+        <form action="javascript:void(0);" method="get">
+            <fieldset class="clearfix">
+                <p><span class="fontawesome-user"></span><input type="text" value="Логин" onBlur="if(this.value == '') this.value = 'Логин'" onFocus="if(this.value == 'Логин') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <p><span class="fontawesome-lock"></span><input type="password"  value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль'" onFocus="if(this.value == 'Пароль') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                <p><input type="submit" value="ВОЙТИ"></p>
+            </fieldset>
+        </form>
+        <p>Нет аккаунта? &nbsp;&nbsp;<a href="#">Регистрация</a><span class="fontawesome-arrow-right"></span></p>
+    </div>
+    
+    
+    
+    
+    <div id="app" class="app">
+    
+        <!--content-->
+        <div id="content" class="content"></div>
+        
+        <!--right_block-->
+        <div class="right_block">
+           
+            <div id="menu" class="menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/?field=football">Football</a></li>
+                    <li><a href="/?field=hockey">Hockey</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
+
