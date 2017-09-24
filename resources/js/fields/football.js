@@ -18,7 +18,7 @@
 
         field_resize(true);
 
-        for ( var i = 1; i <= 20; i++ ) {
+        for ( var i = 1; i <= 11; i++ ) {
           var player = document.createElement('div');
           player.className = 'player';
           document.getElementById('position_' + i).appendChild(player);

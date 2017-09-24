@@ -17,10 +17,10 @@
                                     <div class="dot penalty_dot_A"></div>
                                     <div class="circle half_goal_A"></div>
                                 </div>
-                                
+                                <div class="dno"></div>
                                 <div class="angle angle_A_right"></div>
                             </div>
-                            
+
                             <div class="sector_row sector_A_top_row_bottom">
                             </div>
                             

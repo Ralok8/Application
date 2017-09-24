@@ -257,6 +257,7 @@
     margin-bottom: calc(0.7vmin * 7);
 }
 
+
 .positions_sector {
     display: flex;
     justify-content: space-between;
@@ -280,7 +281,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    height: 4%;
+    height: 5%;
     width: 100%;
 }
 
@@ -289,7 +290,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 4%;
+    width: 5%;
     
     position: relative;
 }

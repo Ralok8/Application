@@ -6,5 +6,6 @@
     <a href="/fields/basketball">Basketball</a>
     <a href="#">Futsal</a>
     <a href="#">Tennis</a>
+    <a href="#">Handball</a>
     <a href="#">American football</a>
 @stop

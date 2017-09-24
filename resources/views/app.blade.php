@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>fields</title>
+        <title>zzezzy</title>
         <link rel="stylesheet" href="/resources/css/reset.css" type="text/css" />
         <link rel="stylesheet" href="/resources/css/app.css" type="text/css" />
         
@@ -13,8 +13,8 @@
     <body>
         <div class='menu'>
             <ul>
-                <li><a href="/">home</a></li>
-                <li><a href="/fields">sport fields</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/fields">Fields</a></li>
             </ul>
         </div>
         
